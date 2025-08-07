@@ -5,12 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController
+public class BucketController
 {
-    @GetMapping("/")
-    public String homePage(Model model)
+    @GetMapping("/bucket")
+    public String bucket(Model model)
     {
-        model.addAttribute("title", "Главная страница");
-        return "homePage"; // name
+        model.addAttribute("title", "Корзина");
+        return "bucket"; // name
     }
 }

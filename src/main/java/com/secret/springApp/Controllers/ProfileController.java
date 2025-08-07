@@ -5,12 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController
+public class ProfileController
 {
-    @GetMapping("/")
-    public String homePage(Model model)
+    @GetMapping("/profile")
+    public String profile(Model model)
     {
-        model.addAttribute("title", "Главная страница");
-        return "homePage"; // name
+        model.addAttribute("title", "Личный кабинет");
+        return "profile"; // name
     }
 }
