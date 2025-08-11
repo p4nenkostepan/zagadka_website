@@ -9,9 +9,7 @@
 
 <body>
 
-    <header th:insert = "blocks\header :: header">
-
-    </header>
+    <header th:insert = "blocks\header :: header"/>
     <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <div class="container-fluid px-3">
             <!-- Логотип -->
@@ -52,6 +50,9 @@
 
 
     <p th:text="|Hello, ${title}!|"></p>
+
+    <footer th:insert = "blocks\footer :: footer"/>
+    
 </body>
 
 </html>
