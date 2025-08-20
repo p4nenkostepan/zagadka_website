@@ -12,12 +12,12 @@
         <div th:replace="blocks/header :: header"></div>
 
         <main class="container my-5">
-            <div th:href = "">
+
                 <div th:each = "el : ${posts}" class = "alert aria-label mt-3">
                     <h3 th:text = "${el.name}"></h3> <!--название товара-->
                     <p th:text = "${el.price}"></p> <!--цена товара-->
                 </div>
-            </div>
+
         </main>
 
         <div th:replace="blocks/footer :: footer"></div>
