@@ -1,0 +1,7 @@
+package com.secret.springApp.Repo;
+
+import com.secret.springApp.Models.Product;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProductRepository extends CrudRepository<Product, Long> {
+}

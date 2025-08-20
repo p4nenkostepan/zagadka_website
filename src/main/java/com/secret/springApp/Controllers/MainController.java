@@ -9,8 +9,9 @@ public class MainController
 {
     @GetMapping("/")
     public String homePage(Model model)
+
     {
-        model.addAttribute("title", "Главная страница");
+        model.addAttribute("title", "Загадка | Интернет-магазин");
         return "homePage"; // name
     }
 }
