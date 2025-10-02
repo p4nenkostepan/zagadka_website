@@ -1,7 +1,11 @@
 package com.secret.springApp.Models;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "Products")
 public class Product
@@ -17,40 +21,10 @@ public class Product
     @Column(name = "name")
     private String name;
 
+    @Column(name = "photo_link")
+    private String photo_link;
+
     @Column(name = "description")
     private String description;
 
-
-    //getters and setters
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }

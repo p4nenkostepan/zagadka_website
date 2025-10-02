@@ -5,5 +5,3 @@ CREATE TABLE IF NOT EXISTS Products
     name CHARACTER VARYING(50) NOT NULL,
     description CHARACTER VARYING(200) NOT NULL
 );
-
-insert into Products (id, price, name, description) values (1, 1000, 'футболка', 'эта футболка очень классная!')
