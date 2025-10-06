@@ -1,7 +1,11 @@
 package com.secret.springApp.Models;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 @Entity
 @Table(name = "Orders")
 public class Order

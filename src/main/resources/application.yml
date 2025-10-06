@@ -6,10 +6,4 @@ spring:
     password: 'admin'
   jpa:
     hibernate:
-      ddl-auto: create
-    sql:
-      init:
-        mode: always
-        platform: postgresql
-        schema-locations: classpath:database/initProductsTable.sql
-        data-locations: classpath:database/initProductsTable.sql
+      ddl-auto: update

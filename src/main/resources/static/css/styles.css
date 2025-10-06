@@ -1,0 +1,77 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-logo {
+  width: 120px;
+  max-width: 25vw;
+  height: auto;
+  opacity: 0;
+  animation: fadeInDown 1.5s ease forwards;
+}
+
+.hero-text {
+  color: white;
+  opacity: 0;
+  animation: fadeInUp 2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* ===== LOOPING TEXT ===== */
+.loop-container {
+  position: absolute;
+  bottom: 8%;
+  width: 200%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.loop-text {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #ccc;
+  padding-right: 4rem;
+  animation: scrollText 18s linear infinite;
+}
+
+.loop-text:nth-child(2) {
+  animation-delay: 9s; /* половина времени */
+}
+
+@keyframes scrollText {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== FADE-IN FOR PRODUCTS ===== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
